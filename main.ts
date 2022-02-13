@@ -1,0 +1,15 @@
+input.onPinPressed(TouchPin.P0, function () {
+    radio.sendNumber(5)
+    music.playTone(262, music.beat(BeatFraction.Whole))
+    music.playTone(294, music.beat(BeatFraction.Whole))
+    music.playTone(330, music.beat(BeatFraction.Whole))
+})
+input.onButtonPressed(Button.A, function () {
+    basic.showString("fin")
+})
+radio.setGroup(33)
+music.setBuiltInSpeakerEnabled(true)
+music.setVolume(255)
+basic.showIcon(IconNames.StickFigure)
+basic.pause(100)
+basic.clearScreen()
