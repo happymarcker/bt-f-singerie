@@ -1,11 +1,13 @@
 input.onPinPressed(TouchPin.P0, function () {
-    radio.sendNumber(5)
+    radio.sendNumber(0)
     music.playTone(262, music.beat(BeatFraction.Whole))
     music.playTone(294, music.beat(BeatFraction.Whole))
     music.playTone(330, music.beat(BeatFraction.Whole))
 })
 input.onButtonPressed(Button.A, function () {
-    basic.showString("fin")
+    basic.showString("BT-F")
+    basic.pause(100)
+    basic.clearScreen()
 })
 radio.setGroup(33)
 music.setBuiltInSpeakerEnabled(true)
