@@ -9,7 +9,13 @@ input.onButtonPressed(Button.A, function () {
     basic.pause(100)
     basic.clearScreen()
 })
+input.onButtonPressed(Button.B, function () {
+    basic.showString("v1.1")
+    basic.pause(100)
+    basic.clearScreen()
+})
 radio.setGroup(33)
+radio.setTransmitPower(7)
 music.setBuiltInSpeakerEnabled(true)
 music.setVolume(255)
 basic.showIcon(IconNames.StickFigure)
